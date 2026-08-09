@@ -1,14 +1,13 @@
 :root {
-  --brand: #1F3B57;
-  --brand-dark: #142838;
-  --accent: #D98A3D;
-  --accent-soft: #F3D9B8;
-  --ink: #1B2430;
-  --ink-soft: #5B6B7C;
-  --bg: #FBF9F5;
-  --bg-alt: #F1ECE0;
-  --border: #E3DCC9;
-  --radius: 12px;
+  --brand: #1B3348;
+  --brand-dark: #0F2233;
+  --accent: #1C8CA8;
+  --ink: #131B24;
+  --ink-soft: #4E5D6C;
+  --bg: #F7F9FA;
+  --bg-alt: #EEF2F5;
+  --border: #DCE3E8;
+  --radius: 8px;
   --font-heading: "Fraunces", Georgia, serif;
   --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
@@ -43,7 +42,7 @@ html[data-lang="en"] .lang-en { display: initial; }
 .site-header {
   position: sticky;
   top: 0;
-  background: rgba(251, 249, 245, 0.92);
+  background: rgba(247, 249, 250, 0.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
   z-index: 10;
@@ -184,22 +183,21 @@ html[data-lang="en"] .lang-en { display: initial; }
   position: absolute;
   inset: 0;
   background-image:
-    repeating-linear-gradient(0deg, rgba(31,59,87,0.05) 0, rgba(31,59,87,0.05) 1px, transparent 1px, transparent 48px),
-    repeating-linear-gradient(90deg, rgba(31,59,87,0.05) 0, rgba(31,59,87,0.05) 1px, transparent 1px, transparent 48px);
+    repeating-linear-gradient(0deg, rgba(27,51,72,0.05) 0, rgba(27,51,72,0.05) 1px, transparent 1px, transparent 48px),
+    repeating-linear-gradient(90deg, rgba(27,51,72,0.05) 0, rgba(27,51,72,0.05) 1px, transparent 1px, transparent 48px);
   pointer-events: none;
 }
-.hero-symbol {
+.hero-bg::after {
+  content: "";
   position: absolute;
-  font-family: var(--font-heading);
-  color: var(--brand);
-  opacity: 0.08;
-  font-weight: 600;
-  user-select: none;
+  top: -20%;
+  right: -8%;
+  width: 44%;
+  height: 140%;
+  background: var(--accent);
+  opacity: 0.07;
+  clip-path: polygon(32% 0, 100% 0, 100% 100%, 0% 100%);
 }
-.hero-symbol-1 { font-size: 11rem; top: -2.5rem; right: 4%; }
-.hero-symbol-2 { font-size: 7rem; bottom: -1rem; right: 26%; }
-.hero-symbol-3 { font-size: 5rem; top: 4rem; right: 42%; display: none; }
-.hero-symbol-4 { font-size: 2.2rem; bottom: 2.5rem; left: 4%; display: none; }
 
 .hero-inner { position: relative; max-width: 700px; }
 .eyebrow {
@@ -220,10 +218,6 @@ html[data-lang="en"] .lang-en { display: initial; }
 }
 .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
 
-@media (min-width: 700px) {
-  .hero-symbol-3, .hero-symbol-4 { display: block; }
-}
-
 /* Sections */
 .section { padding: 4.5rem 0; }
 .section-alt { background: var(--bg-alt); }
@@ -237,6 +231,7 @@ html[data-lang="en"] .lang-en { display: initial; }
 .card {
   background: var(--bg);
   border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
   border-radius: var(--radius);
   padding: 1.85rem;
 }
@@ -293,11 +288,6 @@ html[data-lang="en"] .lang-en { display: initial; }
   font-weight: 600;
 }
 .contact-methods a:hover { color: var(--brand); }
-.contact-location {
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
-  color: var(--ink-soft);
-}
 
 /* Footer */
 .site-footer {
@@ -324,19 +314,18 @@ html[data-lang="en"] .lang-en { display: initial; }
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --ink: #EFEAE0;
-    --ink-soft: #A8B3BE;
-    --bg: #101820;
-    --bg-alt: #17222D;
-    --border: #2A3746;
-    --accent-soft: #4A3820;
+    --ink: #EAEDEF;
+    --ink-soft: #9AA7B4;
+    --bg: #0E151C;
+    --bg-alt: #151F28;
+    --border: #263340;
   }
-  .site-header { background: rgba(16, 24, 32, 0.92); }
+  .site-header { background: rgba(14, 21, 28, 0.92); }
   .btn-primary { color: #fff; }
-  .hero-symbol { opacity: 0.12; }
   .hero-bg {
     background-image:
-      repeating-linear-gradient(0deg, rgba(239,234,224,0.05) 0, rgba(239,234,224,0.05) 1px, transparent 1px, transparent 48px),
-      repeating-linear-gradient(90deg, rgba(239,234,224,0.05) 0, rgba(239,234,224,0.05) 1px, transparent 1px, transparent 48px);
+      repeating-linear-gradient(0deg, rgba(234,237,239,0.05) 0, rgba(234,237,239,0.05) 1px, transparent 1px, transparent 48px),
+      repeating-linear-gradient(90deg, rgba(234,237,239,0.05) 0, rgba(234,237,239,0.05) 1px, transparent 1px, transparent 48px);
   }
+  .hero-bg::after { opacity: 0.12; }
 }
