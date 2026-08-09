@@ -187,18 +187,6 @@ html[data-lang="en"] .lang-en { display: initial; }
     repeating-linear-gradient(90deg, rgba(27,51,72,0.05) 0, rgba(27,51,72,0.05) 1px, transparent 1px, transparent 48px);
   pointer-events: none;
 }
-.hero-bg::after {
-  content: "";
-  position: absolute;
-  top: -20%;
-  right: -8%;
-  width: 44%;
-  height: 140%;
-  background: var(--accent);
-  opacity: 0.07;
-  clip-path: polygon(32% 0, 100% 0, 100% 100%, 0% 100%);
-}
-
 .hero-inner {
   position: relative;
   display: grid;
@@ -218,21 +206,13 @@ html[data-lang="en"] .lang-en { display: initial; }
 @media (min-width: 860px) {
   .hero-photo { width: 270px; justify-self: end; }
 }
-.hero-photo-shape {
-  position: absolute;
-  inset: -14px;
-  background: linear-gradient(135deg, var(--brand), var(--accent));
-  border-radius: 24px;
-  transform: rotate(-4deg);
-}
 .hero-photo-img {
-  position: relative;
   display: block;
   width: 100%;
   aspect-ratio: 330 / 367;
   object-fit: cover;
-  border-radius: 18px;
-  box-shadow: 0 18px 40px -14px rgba(19, 27, 36, 0.35);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 28px -16px rgba(19, 27, 36, 0.3);
 }
 .eyebrow {
   font-size: 0.85rem;
@@ -265,7 +245,7 @@ html[data-lang="en"] .lang-en { display: initial; }
 .card {
   background: var(--bg);
   border: 1px solid var(--border);
-  border-top: 3px solid var(--accent);
+  border-top: 2px solid var(--accent);
   border-radius: var(--radius);
   padding: 1.85rem;
 }
@@ -361,5 +341,4 @@ html[data-lang="en"] .lang-en { display: initial; }
       repeating-linear-gradient(0deg, rgba(234,237,239,0.05) 0, rgba(234,237,239,0.05) 1px, transparent 1px, transparent 48px),
       repeating-linear-gradient(90deg, rgba(234,237,239,0.05) 0, rgba(234,237,239,0.05) 1px, transparent 1px, transparent 48px);
   }
-  .hero-bg::after { opacity: 0.12; }
 }
