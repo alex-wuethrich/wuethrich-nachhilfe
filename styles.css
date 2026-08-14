@@ -179,14 +179,6 @@ html[data-lang="en"] .lang-en { display: initial; }
   overflow: hidden;
   background: linear-gradient(180deg, var(--bg-alt), var(--bg));
 }
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  background-image:
-    repeating-linear-gradient(0deg, rgba(27,51,72,0.05) 0, rgba(27,51,72,0.05) 1px, transparent 1px, transparent 48px),
-    repeating-linear-gradient(90deg, rgba(27,51,72,0.05) 0, rgba(27,51,72,0.05) 1px, transparent 1px, transparent 48px);
-  pointer-events: none;
-}
 .hero-inner {
   position: relative;
   display: grid;
@@ -336,9 +328,4 @@ html[data-lang="en"] .lang-en { display: initial; }
   }
   .site-header { background: rgba(14, 21, 28, 0.92); }
   .btn-primary { color: #fff; }
-  .hero-bg {
-    background-image:
-      repeating-linear-gradient(0deg, rgba(234,237,239,0.05) 0, rgba(234,237,239,0.05) 1px, transparent 1px, transparent 48px),
-      repeating-linear-gradient(90deg, rgba(234,237,239,0.05) 0, rgba(234,237,239,0.05) 1px, transparent 1px, transparent 48px);
-  }
 }
