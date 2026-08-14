@@ -283,11 +283,15 @@ html[data-lang="en"] .lang-en { display: initial; }
   margin-top: 1.5rem;
 }
 .contact-methods a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   color: var(--ink);
   text-decoration: none;
   font-weight: 600;
 }
 .contact-methods a:hover { color: var(--brand); }
+.contact-icon { width: 1.15rem; height: 1.15rem; flex-shrink: 0; color: var(--accent); }
 
 /* Footer */
 .site-footer {
