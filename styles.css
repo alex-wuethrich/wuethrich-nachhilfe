@@ -274,16 +274,11 @@ html[data-lang="en"] .lang-en { display: initial; }
 @media (min-width: 860px) {
   .hero-photo { width: 100%; max-width: 330px; justify-self: end; }
 }
-/* The photo has almost no space above the head, so add white headroom */
 .hero-photo-img {
   display: block;
   width: 100%;
   max-width: 100%;
-  aspect-ratio: 330 / 405;
-  padding-top: 11%;
-  background: #fff;
-  object-fit: contain;
-  object-position: center bottom;
+  height: auto;
   border-radius: var(--radius);
   box-shadow: 0 18px 40px -22px rgba(19, 27, 36, 0.45);
 }
