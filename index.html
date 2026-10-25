@@ -9,11 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mathe-Nachhilfe Zürich - Gymiprüfung, Gymnasium, Sek &amp; BMS | Alexander Wüthrich</title>
   <meta name="description" content="Mathe-Nachhilfe in Zürich vom ETH-Ingenieur: Vorbereitung auf die Gymiprüfung (Lang- und Kurzgymi), Gymnasium, Sekundarschule und BMS. CHF 80 pro Stunde, Erstgespräch kostenlos.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%90%3C/text%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B3348'/%3E%3Cpath d='M10 36l7-3 9 17 11-34h17' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/fraunces-600-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -83,9 +83,13 @@
           </a>
         </div>
       </div>
-      <div class="hero-photo">
+      <figure class="hero-photo">
         <img class="hero-photo-img" src="alexander-wuethrich.png" alt="Alexander Wüthrich" width="330" height="367">
-      </div>
+        <figcaption>
+          <strong>Alexander Wüthrich</strong>
+          <span class="lang-de">MSc ETH Zürich, Maschinenbau</span><span class="lang-en">MSc ETH Zurich, Mechanical Engineering</span>
+        </figcaption>
+      </figure>
     </div>
   </section>
 
@@ -93,28 +97,28 @@
     <div class="container">
       <h2><span class="lang-de">Angebot</span><span class="lang-en">Services</span></h2>
       <div class="grid grid-2">
-        <div class="card">
+        <div class="card card-featured reveal">
           <h3><span class="lang-de">Gymiprüfung</span><span class="lang-en">Gymi entrance exam</span></h3>
           <p>
             <span class="lang-de">Gezielte Vorbereitung auf die Mathe-Prüfung für das Lang- und Kurzgymnasium. <a href="#gymipruefung">Mehr dazu</a></span>
             <span class="lang-en">Focused preparation for the math exam for Langgymnasium and Kurzgymnasium. <a href="#gymipruefung">Learn more</a></span>
           </p>
         </div>
-        <div class="card">
+        <div class="card reveal">
           <h3><span class="lang-de">Lang- und Kurzgymnasium</span><span class="lang-en">Langgymnasium and Kurzgymnasium</span></h3>
           <p>
             <span class="lang-de">Begleitung in Mathe und Physik bis zur Matura. Wir schliessen Lücken, bereiten Prüfungen vor und sorgen dafür, dass die Probezeit klappt.</span>
             <span class="lang-en">Support in math and physics all the way to the Matura. We close gaps, prepare for tests and make sure the probation period goes well.</span>
           </p>
         </div>
-        <div class="card">
+        <div class="card reveal">
           <h3><span class="lang-de">Sekundarschule</span><span class="lang-en">Sekundarschule</span></h3>
           <p>
             <span class="lang-de">Solide Mathe-Grundlagen für bessere Noten und als Basis für Gymnasium, BMS oder Lehre.</span>
             <span class="lang-en">Solid math foundations for better grades and a good basis for Gymnasium, BMS or an apprenticeship.</span>
           </p>
         </div>
-        <div class="card">
+        <div class="card reveal">
           <h3><span class="lang-de">BMS</span><span class="lang-en">BMS</span></h3>
           <p>
             <span class="lang-de">Mathe an der Berufsmaturitätsschule, im laufenden Unterricht und gezielt vor Prüfungen.</span>
@@ -130,42 +134,54 @@
   </section>
 
   <section id="gymipruefung" class="section section-alt">
-    <div class="container split">
-      <div>
-        <h2><span class="lang-de">Vorbereitung auf die Gymiprüfung</span><span class="lang-en">Gymi entrance exam prep</span></h2>
-        <p>
-          <span class="lang-de">Die Zentrale Aufnahmeprüfung (ZAP) findet jedes Jahr im März statt. In Mathe zählt nicht nur, was man kann, sondern auch, ob man es unter Zeitdruck ruhig und sauber hinschreibt. Genau das üben wir.</span>
-          <span class="lang-en">The central entrance exam (ZAP) takes place every March. In math, it's not just about what you know, but whether you can get it down calmly and cleanly under time pressure. That's exactly what we practice.</span>
-        </p>
-        <div class="tracks">
-          <div class="track">
-            <h3>Langgymi</h3>
-            <p><span class="lang-de">aus der 6. Klasse Primarschule</span><span class="lang-en">from 6th grade of primary school</span></p>
-          </div>
-          <div class="track">
-            <h3>Kurzgymi</h3>
-            <p><span class="lang-de">aus der 2. oder 3. Sekundarschule</span><span class="lang-en">from 2nd or 3rd year of Sekundarschule</span></p>
-          </div>
+    <div class="container">
+      <h2><span class="lang-de">Vorbereitung auf die Gymiprüfung</span><span class="lang-en">Gymi entrance exam prep</span></h2>
+      <p class="section-intro">
+        <span class="lang-de">Die Zentrale Aufnahmeprüfung (ZAP) findet jedes Jahr im März statt. In Mathe zählt nicht nur, was man kann, sondern auch, ob man es unter Zeitdruck ruhig und sauber hinschreibt. Genau das üben wir.</span>
+        <span class="lang-en">The central entrance exam (ZAP) takes place every March. In math, it's not just about what you know, but whether you can get it down calmly and cleanly under time pressure. That's exactly what we practice.</span>
+      </p>
+      <div class="tracks">
+        <div class="track">
+          <h3>Langgymi</h3>
+          <p><span class="lang-de">aus der 6. Klasse Primarschule</span><span class="lang-en">from 6th grade of primary school</span></p>
         </div>
-        <p>
-          <span class="lang-de"><strong>Wann anfangen?</strong> Idealerweise im Spätsommer oder Herbst vor der Prüfung. Auch ein späterer Einstieg lohnt sich, dann setzen wir klare Prioritäten.</span>
-          <span class="lang-en"><strong>When to start?</strong> Ideally in late summer or autumn before the exam. Starting later is still worth it, we just set clear priorities.</span>
-        </p>
+        <div class="track">
+          <h3>Kurzgymi</h3>
+          <p><span class="lang-de">aus der 2. oder 3. Sekundarschule</span><span class="lang-en">from 2nd or 3rd year of Sekundarschule</span></p>
+        </div>
       </div>
-      <div>
-        <h3 class="list-title"><span class="lang-de">So bereiten wir uns vor</span><span class="lang-en">How we prepare</span></h3>
-        <ul class="accent-list">
-          <li><span class="lang-de">Alte Prüfungen unter echten Bedingungen lösen</span><span class="lang-en">Solving past exams under real conditions</span></li>
-          <li><span class="lang-de">Typische Aufgabentypen und Lösungswege kennenlernen</span><span class="lang-en">Learning the typical problem types and how to approach them</span></li>
-          <li><span class="lang-de">Lücken im Schulstoff gezielt schliessen</span><span class="lang-en">Closing gaps in the school material</span></li>
-          <li><span class="lang-de">Zeit einteilen und an der Prüfung ruhig bleiben</span><span class="lang-en">Managing time and staying calm during the exam</span></li>
-        </ul>
-      </div>
+      <h3 class="list-title"><span class="lang-de">So sieht ein typisches Vorbereitungsjahr aus</span><span class="lang-en">What a typical preparation year looks like</span></h3>
+      <ol class="timeline">
+        <li class="reveal">
+          <p class="label"><span class="lang-de">Aug - Okt</span><span class="lang-en">Aug - Oct</span></p>
+          <h3><span class="lang-de">Grundlagen festigen</span><span class="lang-en">Strengthen the basics</span></h3>
+          <p><span class="lang-de">Lücken im Schulstoff schliessen und Sicherheit im Rechnen aufbauen.</span><span class="lang-en">Close gaps in the school material and build confidence with calculations.</span></p>
+        </li>
+        <li class="reveal">
+          <p class="label"><span class="lang-de">Nov - Jan</span><span class="lang-en">Nov - Jan</span></p>
+          <h3><span class="lang-de">Prüfungsaufgaben üben</span><span class="lang-en">Practice exam problems</span></h3>
+          <p><span class="lang-de">Die typischen Aufgabentypen der ZAP kennenlernen und Lösungswege trainieren.</span><span class="lang-en">Get to know the typical ZAP problem types and practice how to solve them.</span></p>
+        </li>
+        <li class="reveal">
+          <p class="label"><span class="lang-de">Feb</span><span class="lang-en">Feb</span></p>
+          <h3><span class="lang-de">Probeprüfungen</span><span class="lang-en">Practice exams</span></h3>
+          <p><span class="lang-de">Alte Prüfungen unter echten Bedingungen und mit Zeitlimit lösen.</span><span class="lang-en">Solve past exams under real conditions, with a time limit.</span></p>
+        </li>
+        <li class="reveal timeline-exam">
+          <p class="label"><span class="lang-de">März</span><span class="lang-en">March</span></p>
+          <h3><span class="lang-de">Aufnahmeprüfung</span><span class="lang-en">Entrance exam</span></h3>
+          <p><span class="lang-de">Gut vorbereitet und ruhig in die Prüfung.</span><span class="lang-en">Well prepared and calm on exam day.</span></p>
+        </li>
+      </ol>
+      <p class="section-note">
+        <span class="lang-de">Ein späterer Einstieg lohnt sich auch, dann setzen wir klare Prioritäten.</span>
+        <span class="lang-en">Starting later is still worth it, we just set clear priorities.</span>
+      </p>
     </div>
   </section>
 
   <section id="ueber-mich" class="section">
-    <div class="container about-inner">
+    <div class="container about-inner reveal">
       <div>
         <h2><span class="lang-de">Über mich</span><span class="lang-en">About me</span></h2>
         <p>
@@ -186,7 +202,7 @@
       <h2><span class="lang-de">Preise &amp; Ort</span><span class="lang-en">Rates &amp; location</span></h2>
       <div class="split">
         <div class="price-box">
-          <p class="price">CHF 80</p>
+          <p class="price"><span class="price-currency">CHF</span><span class="price-amount">80</span></p>
           <p class="price-unit"><span class="lang-de">pro Stunde (60 Minuten)</span><span class="lang-en">per hour (60 minutes)</span></p>
           <ul class="price-details">
             <li><span class="lang-de">Erstgespräch kostenlos und unverbindlich</span><span class="lang-en">First conversation free, no strings attached</span></li>
@@ -261,33 +277,49 @@
     </div>
   </section>
 
-  <section id="kontakt" class="section section-alt">
+  <section id="kontakt" class="section contact">
     <div class="container contact-inner">
-      <h2><span class="lang-de">Kontakt</span><span class="lang-en">Get in touch</span></h2>
-      <p>
-        <span class="lang-de">Melden Sie sich für ein kostenloses Erstgespräch, am einfachsten per Telefon oder WhatsApp.</span>
-        <span class="lang-en">Get in touch for a free first conversation, easiest by phone or WhatsApp.</span>
-      </p>
-      <div class="contact-methods">
-        <a href="tel:+41797556456">
-          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <div>
+        <p class="eyebrow"><span class="lang-de">Kostenloses Erstgespräch</span><span class="lang-en">Free first conversation</span></p>
+        <h2><span class="lang-de">Lassen Sie uns sprechen</span><span class="lang-en">Let's talk</span></h2>
+        <p>
+          <span class="lang-de">Melden Sie sich für ein kostenloses Erstgespräch, am einfachsten per Telefon oder WhatsApp.</span>
+          <span class="lang-en">Get in touch for a free first conversation, easiest by phone or WhatsApp.</span>
+        </p>
+      </div>
+      <div class="contact-main">
+        <a href="tel:+41797556456" class="btn btn-light">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           079 755 64 56
         </a>
-        <a href="https://wa.me/41797556456?text=Guten%20Tag%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Mathe-Nachhilfe." target="_blank" rel="noopener">
-          <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><g transform="translate(2,2) scale(0.833)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></g></svg>
+        <a href="https://wa.me/41797556456?text=Guten%20Tag%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Mathe-Nachhilfe." class="btn btn-outline-light" target="_blank" rel="noopener">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><g transform="translate(2,2) scale(0.833)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></g></svg>
           WhatsApp
         </a>
-        <a href="https://signal.me/#p/+41797556456" target="_blank" rel="noopener">
-          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-11.78 7.84L4 21l1.66-5.22A8.5 8.5 0 1 1 21 11.5z"/></svg>
-          Signal
-        </a>
-        <a href="mailto:alexwuethrich1992@gmail.com">
-          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          alexwuethrich1992@gmail.com
-        </a>
+        <div class="contact-more">
+          <a href="https://signal.me/#p/+41797556456" target="_blank" rel="noopener">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-11.78 7.84L4 21l1.66-5.22A8.5 8.5 0 1 1 21 11.5z"/></svg>
+            Signal
+          </a>
+          <a href="mailto:alexwuethrich1992@gmail.com">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            alexwuethrich1992@gmail.com
+          </a>
+        </div>
       </div>
     </div>
   </section>
+
+  <nav class="mobile-bar" aria-label="Kontakt">
+    <a href="tel:+41797556456" class="btn btn-primary">
+      <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="lang-de">Anrufen</span><span class="lang-en">Call</span>
+    </a>
+    <a href="https://wa.me/41797556456?text=Guten%20Tag%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Mathe-Nachhilfe." class="btn btn-secondary" target="_blank" rel="noopener">
+      <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><g transform="translate(2,2) scale(0.833)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></g></svg>
+      WhatsApp
+    </a>
+  </nav>
 
   <footer class="site-footer">
     <div class="container">

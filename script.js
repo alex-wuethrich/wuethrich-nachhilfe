@@ -16,7 +16,7 @@ nav.querySelectorAll('a').forEach(link => {
 });
 
 // Scroll reveal
-const revealTargets = document.querySelectorAll('.card, .about-inner');
+const revealTargets = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
