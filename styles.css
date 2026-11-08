@@ -718,3 +718,11 @@ html[data-lang="en"] .lang-en { display: initial; }
 .contact .contact-form .form-status:empty { display: none; }
 .contact .contact-form .form-status { color: var(--ink); font-weight: 600; }
 .form-trap { display: none; }
+
+/* Three-column cards and text links */
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 860px) {
+  .grid-3 { grid-template-columns: 1fr; }
+}
+.text-link { color: var(--accent); font-weight: 600; text-decoration: none; }
+.text-link:hover { text-decoration: underline; }
