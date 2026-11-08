@@ -1,3 +1,52 @@
+// Google Ads conversion tracking
+// Fill in once the Google Ads account exists: Ziele > Conversions > Neue Conversion-Aktion > Website.
+// ADS_ID looks like 'AW-123456789', each label like 'AbC-D_efG-h12_34-567'.
+// Nothing is loaded while ADS_ID is empty.
+const ADS_ID = '';
+const CONVERSION_LABELS = {
+  phone: '',
+  whatsapp: '',
+  signal: '',
+  email: ''
+};
+
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+
+if (ADS_ID) {
+  // Consent Mode v2: everything denied until the visitor agrees in the cookie banner
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied'
+  });
+  gtag('js', new Date());
+  gtag('config', ADS_ID);
+
+  const gtagScript = document.createElement('script');
+  gtagScript.async = true;
+  gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + ADS_ID;
+  document.head.appendChild(gtagScript);
+}
+
+function contactMethod(href) {
+  if (href.startsWith('tel:')) return 'phone';
+  if (href.includes('wa.me')) return 'whatsapp';
+  if (href.includes('signal.me')) return 'signal';
+  if (href.startsWith('mailto:')) return 'email';
+  return null;
+}
+
+document.addEventListener('click', (event) => {
+  const link = event.target.closest('a[href]');
+  if (!link || !ADS_ID) return;
+  const method = contactMethod(link.getAttribute('href'));
+  const label = method && CONVERSION_LABELS[method];
+  if (!label) return;
+  gtag('event', 'conversion', { send_to: ADS_ID + '/' + label });
+});
+
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
