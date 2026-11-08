@@ -89,6 +89,9 @@ function applyLang(lang) {
     'content',
     html.dataset[lang === 'de' ? 'descDe' : 'descEn']
   );
+  document.querySelectorAll('option[data-de]').forEach(option => {
+    option.textContent = option.dataset[lang];
+  });
 }
 
 const savedLang = localStorage.getItem('lang') || 'de';
@@ -98,4 +101,44 @@ langToggle.addEventListener('click', () => {
   const next = html.getAttribute('data-lang') === 'de' ? 'en' : 'de';
   applyLang(next);
   localStorage.setItem('lang', next);
+});
+
+// Contact form (sent via Web3Forms to Gmail)
+const contactForm = document.getElementById('contact-form');
+const formStatus = document.getElementById('form-status');
+const formMessages = {
+  de: {
+    sending: 'Wird gesendet …',
+    success: 'Vielen Dank! Ihre Anfrage ist angekommen. Ich melde mich bald bei Ihnen.',
+    error: 'Das hat leider nicht geklappt. Bitte rufen Sie mich an: 079 755 64 56.'
+  },
+  en: {
+    sending: 'Sending …',
+    success: 'Thank you! Your request has arrived. I will get back to you soon.',
+    error: 'Sorry, that did not work. Please call me: 079 755 64 56.'
+  }
+};
+
+contactForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const messages = formMessages[html.getAttribute('data-lang')];
+  const submitButton = contactForm.querySelector('button[type="submit"]');
+  submitButton.disabled = true;
+  formStatus.textContent = messages.sending;
+
+  try {
+    const response = await fetch(contactForm.action, {
+      method: 'POST',
+      headers: { Accept: 'application/json' },
+      body: new FormData(contactForm)
+    });
+    const result = await response.json();
+    if (!result.success) throw new Error(result.message);
+    contactForm.reset();
+    formStatus.textContent = messages.success;
+  } catch (error) {
+    formStatus.textContent = messages.error;
+  } finally {
+    submitButton.disabled = false;
+  }
 });
